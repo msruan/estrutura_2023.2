@@ -1,6 +1,0 @@
-Nome do caso de uso: Marcação de uso
-Descrição: Após o marcamento de uma consulta ser solicitado, o sistema deve validáa-lo.
-Ator envolvido: Usuário.
-Ativação: após o usuário apertar o botão enviar da página de solicitação de consulta,
-o sistema deve iniciar o processo de validação.
-Pré-requisitos: ter todos os campos obrigatórios da solicitação de consulta preenchidos com dados válidos.
