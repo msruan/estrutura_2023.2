@@ -1,0 +1,39 @@
+ATIVIDADE
+
+1. No programa abaixo, complete o código calculando e imprimindo qual o tamanho do cadeia de
+caracteres que foi incluída pelo usuário.
+#include &lt;stdio.h&gt;
+char frase[20];
+int main(){
+printf(“Digite o valor:”);
+scanf(“%s”,frase);
+   
+    }
+2. No exemplo, percorra a “frase” e imprima os valores caractere a caractere na tela do computador. O laço
+de repetição deve percorrer “frase” até que ele encontre o final da string. (caractere especial para fim da
+string igual a ‘\0’.
+#include &lt;stdio.h&gt;
+char frase[20]={&quot;uma frase&quot;};
+int main(){
+   
+    }
+3. Leia duas strings e compare, se elas forem iguais, imprima “São iguais”, senão imprima “São
+diferentes!!”:
+A) As duas strings devem ser definidas como char[10], conforme abaixo:
+#include &lt;stdio.h&gt;
+char f1[10];
+char f2[10];
+int main(){
+   
+    }
+B) As duas strings devem ser definidas como string, para isso use a blioteca iostream do C++. conforme
+abaixo:
+#include &lt;stdio.h&gt;
+#include &lt;iostream&gt;
+using namespace std;
+string f1;
+string f2;
+int main(){
+}   
+   
+C) Qual as diferenças nos códigos A e B que você encontrou?
