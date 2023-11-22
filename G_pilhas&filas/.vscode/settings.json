@@ -67,7 +67,9 @@
         "typeindex": "cpp",
         "typeinfo": "cpp",
         "stdio.h": "c",
-        "pilha-do-livro.h": "c"
+        "pilha-do-livro.h": "c",
+        "pilha_do_livro.h": "c",
+        "stdlib.h": "c"
     },
     "C_Cpp.errorSquiggles": "enabled"
 }
