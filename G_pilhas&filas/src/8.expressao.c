@@ -28,6 +28,7 @@ int main () {
     fgets(expressao,buffer,stdin);
 
     printf("Expressão está bem construída? %d",expressionMatch(expressao));
+
     
 }
 
@@ -53,10 +54,13 @@ bool expressionMatch(char *expressao){
 
         else if(isCloser(expressao[i])){   
 
-            if(! match(pop(openers),expressao[i]))
+            if(! match(pop(openers),expressao[i])){
+                kill(openers);
                 return false;
+            }
         }    
     }
+    kill(openers);
     return true;
 }
 

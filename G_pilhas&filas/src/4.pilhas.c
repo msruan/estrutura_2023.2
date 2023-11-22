@@ -22,6 +22,7 @@ int main() {
 
     //fflush(stdout); //-> outra alternativa
     printf("%d",pop(P));
+    kill(P);
 
     return 0;
 }

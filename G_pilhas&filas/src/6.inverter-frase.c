@@ -31,5 +31,7 @@ int main() {
         printf("%c",pop(P));
     }
     printf("\"");
+
+    kill(P);
     
 }

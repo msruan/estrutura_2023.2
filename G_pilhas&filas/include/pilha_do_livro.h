@@ -15,63 +15,25 @@ typedef struct pilha{
 
 }*Pilha; 
 
-int size(Pilha P);
-
 //    pilha
-Pilha gerarPilha(int m){
-
-	Pilha P = (Pilha)malloc(sizeof(struct pilha));
-	P->max = m;
-	P->topo = -1;
-	P->item = (Itemp*)malloc(m*sizeof(Itemp));
-	return P;
-}
+Pilha gerarPilha(int m);
 
 //  vaziap
-bool isEmpty(Pilha P){
-
-	return (size(P)==0);
-}
+bool isEmpty(Pilha P);
 
 //  cheiap
-bool isFull(Pilha P){
-	
-	return (size(P) == P->max);
-}
+bool isFull(Pilha P);
 
 //   empilha
-void push(Itemp x, Pilha P){
-
-	if( P!=NULL && !isFull(P) ){
-		P->item[size(P)] = x;
-		P->topo++;
-	}
-	
-}
+void push(Itemp x, Pilha P);
 
 //    desempilha
-Itemp pop(Pilha P){
-	
-	if( P!=NULL && !isEmpty(P) ){
-
-		P->topo--;
-		return P->item[size(P)];
-	}
-	abort(); //return '\0';
-}
+Itemp pop(Pilha P);
 
 //   destroip
-void clear(Pilha P){
+void kill(Pilha P);
 
-	if(P!=NULL && !isEmpty(P)){
-
-		free(P->item);
-	}
-}
-
-int size(Pilha P){
-	return P->topo+1;
-}
+int size(Pilha P);
 
 // Pilha reverse(Pilha P){
 // 	Pilha reverse;
