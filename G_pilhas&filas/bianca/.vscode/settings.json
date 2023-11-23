@@ -1,0 +1,9 @@
+{
+    "ros.distro": "humble",
+    "files.associations": {
+        "*.cpp": "cpp",
+        "unordered_map": "cpp",
+        "new": "cpp",
+        "stdlib.h": "c"
+    }
+}

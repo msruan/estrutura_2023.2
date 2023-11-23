@@ -89,7 +89,7 @@ char **split(char separador, char* string){
             saida[iteraPalavras] = (char *)malloc(sizeof(char)*(fim-inicio+1));
             strncpy(saida[iteraPalavras],comTrim + inicio, fim);
             saida[iteraPalavras][fim - inicio] = '\0';
-            // printf("\nValores de inicio e fim: %d, %d",inicio,fim);
+            printf("\nValores de inicio e fim: %d, %d",inicio,fim);
             // printf("\nO que mandei: %s",saida[iteraPalavras]);
             inicio = iterador+1;
             iteraPalavras++;
