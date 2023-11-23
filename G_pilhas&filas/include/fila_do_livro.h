@@ -33,7 +33,6 @@ int getindexOfEnd(Fila fila);
 
 void getStatus (Fila fila, char *titulo);
 
-
 void kill(Fila fila);// divide pelo tamanho do bloco, isso corresponde ao numero da pagina virtual,e o resto corresponde ao deslocamento
 //politicas de alocaçao de pagina nao vao cair na prova
 //pode cair uma tabelinha da questao 23

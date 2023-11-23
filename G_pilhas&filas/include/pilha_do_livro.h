@@ -4,7 +4,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
-#include "pilha_do_livro.h"
 
 typedef char Itemp; //Itemp
 
@@ -35,7 +34,7 @@ Itemp pop(Pilha P);
 void kill(Pilha P);
 
 int size(Pilha P);
-
+Pilha copy(Pilha p);
 // Pilha reverse(Pilha P){
 // 	Pilha reverse;
 // 	while(!isEmpty(P)){

@@ -32,6 +32,15 @@ void push(Itemp x, Pilha P){
 	
 }
 
+Pilha copy(Pilha p){
+	Pilha copia = gerarPilha(p->max);
+	int topo = p->topo;
+	while(topo>-1){
+		push(p->item[topo],copia);
+		topo--;
+	}return copia;
+}
+
 //    desempilha
 Itemp pop(Pilha P){
 	
