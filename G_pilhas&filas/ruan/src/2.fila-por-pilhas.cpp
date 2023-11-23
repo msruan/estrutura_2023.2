@@ -53,7 +53,9 @@ int main() {
     Fila chamada(new No("Ana"));
     chamada.append(new No("Beatriz"));
     chamada.append(new No("Carla"));
+    
     std::cout << "\nAtenção para a chamada!\n";
+
     while(!chamada.isEmpty()){
         std::cout << chamada.pop() << "?\n";
     }

@@ -35,6 +35,7 @@ int main () {
 bool match(char open, char close){
 
     char par[] = {open, close, '\0'};
+
     return (!strcmp(par,"()") || !strcmp(par,"[]") || !strcmp(par,"{}"));
 }
 
@@ -61,6 +62,7 @@ bool expressionMatch(char *expressao){
         }    
     }
     kill(openers);
+    
     return true;
 }
 

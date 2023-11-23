@@ -4,6 +4,14 @@
 
 #define ehImpar(a) (a%2==1)
 
+int busca_binaria(int *array, int size, int buscado);
+
+int main() {
+    int vetor[] = {0,1,2,3,4,5,6,7,8,9,10,11};
+    printf("Achamos (OU NAO) o elemento, está na posição %d",busca_binaria(vetor,12,12));
+    return 0;
+}
+
 int busca_binaria(int *array, int size, int buscado){
     
     int inicio = 0,meio = (ehImpar(size) ? ((size -1) / 2)   : size/2 ) + inicio, fim = size -1, iteracoes = 1;
@@ -16,57 +24,19 @@ int busca_binaria(int *array, int size, int buscado){
         // printf("%d é o final\n",fim);
         // printf("*********\n\n");
 
-        if(array[meio] == buscado ){
+        if(array[meio] == buscado )
             return meio;
-        }else if(array[meio] < buscado){
+        else if(array[meio] < buscado)
             inicio = meio+1;
-        }else if(array[meio] > buscado){
+        else if(array[meio] > buscado)
             fim = meio -1;
-        }
+
         size = (fim - inicio)+1;
         meio = (ehImpar(size) ? ((size -1) / 2)   : size/2 ) + inicio;
         iteracoes++;
-    }while(size>=1);
-    return -1;
 
+    }while(size>=1);
+
+    return -1;
 }
 
-// int busca_binaria(int *array, int inicio, int fim, int buscado){
-
-//         int meio = fim/2;
-//         printf("Entrando na busca binária...\n");
-//         printf("Valores:\nInicio: %d\nFim: %d\nMeio: %d\n",inicio,fim,meio);
-//         printf("\n\n");
-
-//         if (array[meio] == buscado) {
-//             printf("ACHAMOS!!!!");
-//             printf("Valores:\nInicio: %d\nFim: %d\nMeio: %d\n",inicio,fim,meio);
-//             printf("\n\n");
-
-//             return inicio + meio;
-//         }
-            
-//         else if( array[meio] < buscado  ){
-
-//             printf("Ta pra cima...");
-//             printf("Valores:\nInicio: %d\nFim: %d\nMeio: %d\n",inicio,fim,meio);
-//             printf("\n\n");
-//             sleep(1);
-
-//             return busca_binaria(array, meio, fim, buscado);
-//         }
-
-//         else if( array[meio] > buscado  ){
-
-//             printf("Ta pra baixo...");
-//             printf("Valores:\nInicio: %d\nFim: %d\nMeio: %d\n",inicio,fim,meio);
-//             printf("\n\n");
-//             return busca_binaria(array, inicio ,fim-meio, buscado);
-//         }
-// }
-
-// int main() {
-//     int vetor[] = {0,1,2,3,4,5,6,7,8,9,10,11};
-//     printf("Achamos (OU NAO) o elemento, está na posição %d",busca_binaria(vetor,12,12));
-//     return 0;
-// }

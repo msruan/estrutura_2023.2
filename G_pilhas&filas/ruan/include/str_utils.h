@@ -14,5 +14,6 @@ char *trim(char carac, char *string);
 int contarOcorrencias(char carac, char *string);
 char *join (char separador, char **array);
 char **split(char separador, char* string);
-
+void mostrarString(char **frase);
+void killString(char **string);
 #endif

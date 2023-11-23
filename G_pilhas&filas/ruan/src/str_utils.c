@@ -127,3 +127,15 @@ char *join (char separador, char **array){//vai deixar um espaco de memoria aloc
     }killNo(saida);
     return string;
 }
+
+void mostrarString(char **frase){
+    for(int i = 0; frase[i] != NULL; i++){
+        printf("%s%c",frase[i],(frase[i+1]==NULL ? '\0' : ' '));
+    }
+}
+
+void killString(char **frase){
+    for(int i = 0; frase[i] != NULL; i++){
+        free(frase[i]);
+    }
+}

@@ -1,3 +1,0 @@
-explique como  funciona a transiçao da memoria virutal para (Real?)
-nvp, endereco de frame e etc
-fica na pagina 10.4 memoria virtual por paginação

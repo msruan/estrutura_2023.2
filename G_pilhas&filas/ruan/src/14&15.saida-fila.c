@@ -1,15 +1,20 @@
 #include "../include/fila_do_livro.h"
+
 int main(){
+
     Fila F = gerarFila(5);
+    
     for(int i = 0; i <= 3; i++)
         push('A'+i,F);
 
     while (!isEmpty(F)){
         printf("%c\n",pop(F));
     }
+
     kill(F);
     return 0;
 }
+
 /*  A saída será: 
 
     /=========\
