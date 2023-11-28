@@ -15,11 +15,7 @@ int main () {
     printf(BLUE_BOLD);
     printf("\n**** EXPRESSOES ****\n");
     printf(RESET);
-    printf("\n\nQuantos");
-    printf(YELLOW_BOLD_BRIGHT);
-    printf(" caracteres");
-    printf(RESET);
-    printf(" a cadeia conterá? (Não inclua o \'\\0\'!)\n>>> ");
+    printf("\n\nQuantos caracteres a cadeia conterá? (Não inclua o \'\\0\'!)\n>>> ");
     scanf("%d",&buffer);
     char c;
     while ((c = getchar()) != '\n' && c != EOF);
@@ -29,22 +25,13 @@ int main () {
         exit(0);
     }
 
-    //buffer++//pra caber o '\0'
+    buffer++;//pra caber o '\0'
     char expressao[buffer];
 
     printf("\nDigite sua expressão: \n>>>");
     fgets(expressao,buffer,stdin);
 
-    printf("Expressão está bem construída? ");
-    if(expressionMatch(expressao)){
-        printf(GREEN_BOLD_BRIGHT); 
-        printf("SIM!!!\n\n"),
-        printf(RESET);
-    }else {
-        printf(RED_BOLD_BRIGHT); 
-        printf("nao...\n\n"),
-        printf(RESET);
-    }        
+    printf("Expressão está bem construída? %s",(expressionMatch(expressao) ? +"SIM!!!\n\n" : "nao..."));
     printf("\n\n********************\n\n");
     
 }
@@ -63,18 +50,23 @@ bool expressionMatch(char *expressao){
     if(ehImpar(len))
         return false;
     
-    Pilha openers = gerarPilha(len);
+    Pilha openers = gerarPilha(len/2);
     
     for(int i = 0; i < len; i++){
 
         if(isOpener(expressao[i])){
+
+            if(isFull(openers)){
+                kill(openers);
+                return false;
+            }
             
             push(expressao[i],openers);
         }
 
         else if(isCloser(expressao[i])){   
 
-            if(isEmpty(openers) || (! match(pop(openers),expressao[i]))){
+            if(! match(pop(openers),expressao[i])){
                 kill(openers);
                 return false;
             }

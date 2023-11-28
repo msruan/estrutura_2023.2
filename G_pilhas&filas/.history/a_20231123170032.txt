@@ -1,0 +1,5 @@
+libdrm-amdgpu1, libdrm-common, libdrm-dev, libdrm-intel1, libdrm-nouveau2, libdrm-radeon1, libdrm2, libegl-mesa0, libegl1-mesa-dev, libgbm-dev                                                     23.0.4-0ubuntu1~22.04.1                   24.0~git2311230600.9528d0~oibaf~j                                          60 KB  
+  libgbm1                                                        23.0.4-0ubuntu1~22.04.1                   24.0~git2311230600.9528d0~oibaf~j                                          82 KB  
+  libgl1-mesa-dev                                                23.0.4-0ubuntu1~22.04.1                   24.0~git2311230600.9528d0~oibaf~j                                          55 KB  
+  libgl1-mesa-dri                                                23.0.4-0ubuntu1~22.04.1                   24.0~git2311230600.9528d0~oibaf~j                                         8.8 MB  
+  libglapi-mesa, libglx-mesa0, librewolf, libva-drm2, libva-wayland2, libva-x11-2, libva2, libvdpau1, libxatracker2, mesa-va-drivers,mesa-vdpau-drivers, mesa-vulkan-drivers 

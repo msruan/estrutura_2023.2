@@ -1,0 +1,22 @@
+libdrm-amdgpu1                                                 2.4.113-2~ubuntu0.22.04.1                 2.4.118+git2311210500.02a41c~oibaf~j                                       31 KB  
+  libdrm-common                                                  2.4.113-2~ubuntu0.22.04.1                 2.4.118+git2311210500.02a41c~oibaf~j                                       17 KB  
+  libdrm-dev                                                     2.4.113-2~ubuntu0.22.04.1                 2.4.118+git2311210500.02a41c~oibaf~j                                      324 KB  
+  libdrm-intel1                                                  2.4.113-2~ubuntu0.22.04.1                 2.4.118+git2311210500.02a41c~oibaf~j                                       77 KB  
+  libdrm-nouveau2                                                2.4.113-2~ubuntu0.22.04.1                 2.4.118+git2311210500.02a41c~oibaf~j                                       29 KB  
+  libdrm-radeon1                                                 2.4.113-2~ubuntu0.22.04.1                 2.4.118+git2311210500.02a41c~oibaf~j                                       33 KB  
+  libdrm2                                                        2.4.113-2~ubuntu0.22.04.1                 2.4.118+git2311210500.02a41c~oibaf~j                                       50 KB  
+  libegl-mesa0                                                   23.0.4-0ubuntu1~22.04.1                   24.0~git2311230600.9528d0~oibaf~j                                         169 KB  
+  libegl1-mesa-dev                                               23.0.4-0ubuntu1~22.04.1                   24.0~git2311230600.9528d0~oibaf~j                                          60 KB  
+  libgbm-dev                                                     23.0.4-0ubuntu1~22.04.1                   24.0~git2311230600.9528d0~oibaf~j                                          60 KB  
+  libgbm1                                                        23.0.4-0ubuntu1~22.04.1                   24.0~git2311230600.9528d0~oibaf~j                                          82 KB  
+  libgl1-mesa-dev                                                23.0.4-0ubuntu1~22.04.1                   24.0~git2311230600.9528d0~oibaf~j                                          55 KB  
+  libgl1-mesa-dri                                                23.0.4-0ubuntu1~22.04.1                   24.0~git2311230600.9528d0~oibaf~j                                         8.8 MB  
+  libglapi-mesa                                                  23.0.4-0ubuntu1~22.04.1                   24.0~git2311230600.9528d0~oibaf~j                                          87 KB  
+  libglx-mesa0                                                   23.0.4-0ubuntu1~22.04.1                   24.0~git2311230600.9528d0~oibaf~j                                         209 KB  
+  librewolf                                                      119.0.1-1                                 120.0-1                                                                  78.8 MB  
+  libva-drm2                                                     2.14.0-1                                  2.19.0-1~oibaf~j                                                           23 KB  
+  libva-wayland2                                                 2.14.0-1                                  2.19.0-1~oibaf~j                                                           25 KB  
+  libva-x11-2                                                    2.14.0-1                                  2.19.0-1~oibaf~j                                                           28 KB  
+  libva2                                                         2.14.0-1                                  2.19.0-1~oibaf~j                                                           81 KB  
+  libvdpau1                                                      1.4-3build2                               1.5-2~oibaf~j                                                              33 KB  
+  libxatracker2, mesa-va-drivers,mesa-vdpau-drivers, mesa-vulkan-drivers 
