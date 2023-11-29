@@ -47,7 +47,7 @@ Itemp pop(Pilha P){
 	if( P!=NULL && !isEmpty(P) ){
 
 		P->topo--;
-		return P->item[P->topo];
+		return P->item[size(P)];
 	}
 	abort(); //return '\0';
 }

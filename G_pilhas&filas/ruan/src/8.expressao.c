@@ -29,7 +29,7 @@ int main () {
         exit(0);
     }
 
-    //buffer++//pra caber o '\0'
+    buffer++;//pra caber o '\0'
     char expressao[buffer];
 
     printf("\nDigite sua expressão: \n>>>");
@@ -81,7 +81,7 @@ bool expressionMatch(char *expressao){
         }    
     }
     kill(openers);
-    return isEmpty(openers);
+    return true;
 }
 
 int lenght(char *str){
